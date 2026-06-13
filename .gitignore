@@ -8,11 +8,14 @@
 # Ignore everything inside each master folder...
 HLD-Master/*
 LLD-Master/*
+DSA-Master/*
 # ...then re-include only the teacher content.
 !HLD-Master/CLAUDE.md
 !HLD-Master/CURRICULUM.md
 !LLD-Master/CLAUDE.md
 !LLD-Master/CURRICULUM.md
+!DSA-Master/CLAUDE.md
+!DSA-Master/CURRICULUM.md
 
 # Safety nets, in case a learner keeps work at other paths:
 **/workspace/

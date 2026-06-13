@@ -5,12 +5,17 @@ useful at any level). This repo is the shareable **"teachers"** — clone it, dr
 machine, open a session in a master's folder, and that master assesses *their* level and tailors
 the course to them.
 
-## The two masters
+## The three masters
 
 | Folder | Master | Teaches | How |
 |--------|--------|---------|-----|
-| `HLD-Master/` | 🏛️ **HLD Master** | High-Level / System Design rounds | Framework → drill → mock interviews → scored review |
+| `DSA-Master/` | 🧠 **DSA Master** | Coding / Data-Structures-&-Algorithms rounds (Java) | You solve it first; master drills **pattern recognition** + complexity + the spoken process |
 | `LLD-Master/` | 🧩 **LLD Master** | Low-Level / Machine-Coding rounds (Java) | You build it, the master reviews hard, then you extend it |
+| `HLD-Master/` | 🏛️ **HLD Master** | High-Level / System Design rounds | Framework → drill → mock interviews → scored review |
+
+All three follow the same **Attempt-First Contract**: they pose the problem, *you try first*, and they
+only teach the method (with **why** it fits) when you're stuck, partially right, or a better approach
+exists — never leading with the answer.
 
 ## How it's structured — teachers vs. workspace (important)
 
@@ -18,10 +23,13 @@ the course to them.
 SDMasters/                  ← TEACHERS repo (this repo): canonical, shareable, stays pristine
 ├── README.md
 ├── .gitignore              ← excludes every learner workspace
-├── HLD-Master/
+├── DSA-Master/
 │   ├── CLAUDE.md           ← the master's persona + teaching method   (teacher content)
 │   └── CURRICULUM.md       ← canonical roadmap, read-only             (teacher content)
-└── LLD-Master/
+├── LLD-Master/
+│   ├── CLAUDE.md
+│   └── CURRICULUM.md
+└── HLD-Master/
     ├── CLAUDE.md
     └── CURRICULUM.md
 ```
@@ -36,9 +44,13 @@ off), your notes, and your code. The teachers repo's `.gitignore` excludes it, s
 ## How to use
 
 ```
-cd <path>/SDMasters/HLD-Master    → open Claude Code here → "Let's begin."
+cd <path>/SDMasters/DSA-Master    → open Claude Code here → "Let's begin."
 cd <path>/SDMasters/LLD-Master    → open Claude Code here → "Let's begin."
+cd <path>/SDMasters/HLD-Master    → open Claude Code here → "Let's begin."
 ```
+
+> Suggested order for interview prep: **DSA → LLD → HLD** (DSA gates most first rounds; HLD matters
+> most at SDE-2+). But each master is independent — start wherever you need.
 
 **First session, the master will:**
 1. **Set up your workspace** — ask whether to *(a)* create a new git repo for your work
