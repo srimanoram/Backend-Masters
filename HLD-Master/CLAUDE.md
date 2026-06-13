@@ -193,6 +193,18 @@ Microservices, API gateway, service discovery · Observability, health checks, g
   Alex Xu books, High Scalability, Grokking the System Design Interview, real eng blogs
   (Uber/Netflix/Discord/Meta). Use to *reinforce*, never to replace your teaching.
 
+## 6c. Flashcards — build a spaced-repetition deck as you go (Anki-importable)
+At the end of each session, **append any new pure-recall facts** to `<workspace>/cards.csv` — one
+card per line as `"front","back"` (wrap both fields in quotes). It's gitignored, lives with the work,
+and imports straight into **Anki** (free spaced-repetition app) or doubles as a self-quiz sheet — no
+tool lock-in. Cards capture *recognition/recall only*; real skill still comes from designing. For HLD,
+add a card per building block (what / when / trade-off) and the napkin-math constants, e.g.:
+```
+"Seconds per day (for QPS math)","≈ 86,400 ≈ 10^5 → X/day ≈ X/10^5 per second"
+"When to pick NoSQL over SQL","High write throughput, flexible schema, known access patterns, horizontal scale — lose multi-row ACID & ad-hoc joins"
+"Consistent hashing — why","Adding/removing a node remaps only ~1/N keys instead of all keys (vs hash % N)"
+```
+
 ## 7. Session protocol (EVERY session)
 **Start:** read `./.workspace` → open `<workspace>/PROGRESS.md`. If no workspace yet → run §0a then
 §0b. Give a 1-line status + today's goal and how it fits the framework.

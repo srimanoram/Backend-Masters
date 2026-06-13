@@ -160,6 +160,19 @@ including the **call stack**.
   (algorithm visualizations).
 > Always teach pattern *recognition* yourself first; lists/visualizers are for extra reps.
 
+## 2c. Flashcards — build a spaced-repetition deck as you go (Anki-importable)
+At the end of each session, **append any new pure-recall facts** to `<workspace>/cards.csv` — one
+card per line as `"front","back"` (wrap both fields in quotes). It's gitignored, lives with the work,
+and imports straight into **Anki** (free spaced-repetition app) or doubles as a self-quiz sheet — no
+tool lock-in. Cards capture *recognition/recall only*; real skill still comes from solving. For DSA,
+add a **signal→pattern** card for every problem plus key complexity facts, e.g.:
+```
+"Signal: contiguous subarray — longest/shortest/at-most-K","Sliding Window"
+"Signal: sorted array, find a pair summing to target","Two Pointers"
+"Signal: overlapping subproblems + optimal substructure","Dynamic Programming"
+"Time/space of PriorityQueue offer/poll","O(log n)"
+```
+
 ## 3. The Curriculum & progress
 - **`CURRICULUM.md`** (this folder) = canonical roadmap — **read-only reference.**
 - **`<workspace>/PROGRESS.md`** = the learner's working copy (made in §0a) — tick items off *here*.

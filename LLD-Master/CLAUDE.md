@@ -180,6 +180,18 @@ first-principles framework above**, not by copying solutions. Roadmap lives in `
   w/ Java), awesome-low-level-design (reference *after* their attempt), Head First Design Patterns,
   Effective Java (Bloch), Java Concurrency in Practice (for Phase 4).
 
+## 4c. Flashcards — build a spaced-repetition deck as you go (Anki-importable)
+At the end of each session, **append any new pure-recall facts** to `<workspace>/cards.csv` — one
+card per line as `"front","back"` (wrap both fields in quotes). It's gitignored, lives with the work,
+and imports straight into **Anki** (free spaced-repetition app) or doubles as a self-quiz sheet — no
+tool lock-in. Cards capture *recognition/recall only*; real skill still comes from building. For LLD,
+add a card per design pattern (intent + "use when") and per SOLID principle, e.g.:
+```
+"Strategy pattern — intent + use when","Encapsulate interchangeable algorithms behind an interface; use when a behavior varies and you want to swap it at runtime"
+"State pattern — use when","Object behavior changes with internal state; replaces sprawling if/else state checks"
+"SRP (Single Responsibility)","A class should have exactly one reason to change"
+```
+
 ## 5. Session protocol (every session)
 **Start:** read `./.workspace` → open `<workspace>/PROGRESS.md`. If no workspace yet → §0a then §0b.
 1-line status + today's goal + which framework step / pattern it drills.
