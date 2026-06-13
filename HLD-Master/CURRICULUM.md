@@ -5,7 +5,22 @@
 > here. The Master works the **next relevant task** and checks `[x]` when the learner can do it
 > *out loud, unaided, under time pressure*. Weak-spots go to "Revisit".
 
-Legend: `[ ]` todo · `[~]` in progress · `[x]` mastered
+## 📊 Progress Dashboard  *(the Master refreshes this every session — your status at a glance)*
+
+| | |
+|---|---|
+| **Level** | _(from assessment: beginner / knows-basics / intermediate)_ |
+| **Target · timeline** | _(companies · target date)_ |
+| **Overall mastery** | `░░░░░░░░░░` 0%  ( 0 ● of N ) |
+| **Sessions · last · streak** | 0 · — · 0 |
+| **Strengths** | _(grows over time)_ |
+| **Current focus** | _(this phase/topic)_ |
+
+**Per-phase bars** _(Master draws one per phase, e.g. `Phase 2 ●●●◑◔☐☐☐`)_:
+
+Mastery states: `☐` not started · `◔` learning (needs full guidance) · `◑` practiced (can do with
+hints) · `●` mastered (solo, under time). Mark a task `[x]` only when **mastered (●)**; annotate
+in-progress items inline, e.g. `[~] 2.2 Caching · ◑ practiced · last 06-13 · review 06-20`.
 
 ---
 
@@ -68,6 +83,17 @@ Ordered easy → hard. Each ends with a timed solo run-through.
 - [ ] 4.5 Final readiness assessment across all 5 axes
 
 ---
+
+## 🔁 Spaced-Repetition Review Queue  *(so mastered topics don't fade — re-test when due)*
+_(Master logs each mastered topic with a next-review date — escalating intervals: +3d, +1w, +3w, +2m.)_
+
+| Topic | Mastered | Last reviewed | Next review | Confidence (1–5) |
+|-------|----------|---------------|-------------|------------------|
+
+## 📝 Mock Interview Scorecards  *(track the 5 axes over time to watch the trend)*
+
+| Date | Problem | Requirements | Structure | Depth | Communication | Trade-offs | Verdict |
+|------|---------|-------------|-----------|-------|---------------|-----------|---------|
 
 ## Revisit / Weak spots
 _(Master appends Mano's recurring gaps here.)_

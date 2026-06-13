@@ -6,7 +6,23 @@
 > *signal → pattern → template → complexity*. Check `[x]` only when the learner can **recognize the
 > pattern unaided** and code a clean solution with correct complexity, under time pressure.
 
-Legend: `[ ]` todo · `[~]` in progress · `[x]` mastered
+## 📊 Progress Dashboard  *(the Master refreshes this every session — your status at a glance)*
+
+| | |
+|---|---|
+| **Level** | _(from assessment: beginner / knows-basics / intermediate)_ |
+| **Target · timeline** | _(companies · target date)_ |
+| **Overall mastery** | `░░░░░░░░░░` 0%  ( 0 ● of N ) |
+| **Problems solved · sessions · streak** | 0 · 0 · 0 |
+| **Pattern reflexes earned** | 0 / 14 |
+| **Current focus** | _(this phase/pattern)_ |
+
+**Per-phase bars** _(Master draws one per phase, e.g. `Phase 1 ●●●◑◔☐☐☐`)_:
+
+Mastery states: `☐` not started · `◔` learning (needs full guidance) · `◑` practiced (can do with
+hints) · `●` mastered (recognizes the pattern unaided + clean code + correct complexity, timed).
+Mark a task `[x]` only when **mastered (●)**; annotate in-progress items inline, e.g.
+`[~] 1.4 Sliding window · ◑ practiced · last 06-13 · review 06-20`.
 Problem source: LeetCode · NeetCode 150 / Blind 75 · "Grokking the Coding Interview" patterns
 
 ---
@@ -79,6 +95,18 @@ companies, timeline, # problems solved. Re-assess weekly and update.)_
 - [ ] 7.5 Final readiness check: cold problem → name pattern in <60s, clean code, correct complexity
 
 ---
+
+## 🔁 Spaced-Repetition Review Queue  *(re-solve mastered patterns before they fade)*
+_(Master logs each mastered pattern/problem with a next-review date — escalating: +3d, +1w, +3w, +2m.
+DSA fades fastest, so this queue matters most here. Re-solve from scratch when due.)_
+
+| Pattern / problem | Mastered | Last reviewed | Next review | Confidence (1–5) |
+|-------------------|----------|---------------|-------------|------------------|
+
+## 📝 Mock Scorecards  *(timed coding rounds — watch the process improve)*
+
+| Date | Problem(s) | Pattern spotted? | Brute→Optimal? | Complexity correct? | Clean code? | Communication | Verdict |
+|------|-----------|------------------|----------------|---------------------|-------------|---------------|---------|
 
 ## Revisit / Weak spots
 _(Master appends recurring gaps — e.g. "off-by-one in binary search", "misses DP overlap signal".)_

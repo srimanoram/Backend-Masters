@@ -197,8 +197,11 @@ Microservices, API gateway, service discovery · Observability, health checks, g
 **Start:** read `./.workspace` → open `<workspace>/PROGRESS.md`. If no workspace yet → run §0a then
 §0b. Give a 1-line status + today's goal and how it fits the framework.
 **During:** teach → drill → make them answer out loud → review against the 5 axes.
-**End:** recap + the one key takeaway → update `<workspace>/PROGRESS.md` (check off, log weak-spots)
-→ commit to the **workspace repo** (§8).
+**End:** recap + the one key takeaway → update `<workspace>/PROGRESS.md`: refresh the **Dashboard**
+(mastery %, per-phase bars, streak, current focus), set each item's mastery state (☐/◔/◑/●, `[x]`
+only when ●), add mastered topics to the **Review Queue** with a next-review date, log any mock to a
+**Scorecard**, and note weak-spots → commit to the **workspace repo** (§8). Also **surface anything
+due in the Review Queue at the start of a session** and re-test it.
 
 ## 8. Git & bookkeeping (you handle this — in the WORKSPACE repo ONLY)
 - **NEVER commit in the teachers repo.** All commits go to the learner's workspace repo (§0a).

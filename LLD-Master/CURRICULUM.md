@@ -5,7 +5,22 @@
 > here. The learner writes the code; the Master reviews. Check `[x]` only when the learner can
 > design + code it cleanly *under time pressure, unaided*.
 
-Legend: `[ ]` todo · `[~]` in progress · `[x]` mastered
+## 📊 Progress Dashboard  *(the Master refreshes this every session — your status at a glance)*
+
+| | |
+|---|---|
+| **Level** | _(from assessment: beginner / knows-OOP / intermediate)_ |
+| **Target · timeline** | _(companies · target date)_ |
+| **Overall mastery** | `░░░░░░░░░░` 0%  ( 0 ● of N ) |
+| **Sessions · last · streak** | 0 · — · 0 |
+| **Strengths** | _(grows over time)_ |
+| **Current focus** | _(this phase/problem)_ |
+
+**Per-phase bars** _(Master draws one per phase, e.g. `Phase 2 ●●●◑◔☐`)_:
+
+Mastery states: `☐` not started · `◔` learning (needs full guidance) · `◑` practiced (can do with
+hints) · `●` mastered (solo, under time). Mark a task `[x]` only when **mastered (●)**; annotate
+in-progress items inline, e.g. `[~] 2.2 Vending Machine · ◑ practiced · last 06-13 · review 06-20`.
 Problem bank: github.com/ashishps1/awesome-low-level-design
 
 ---
@@ -92,6 +107,17 @@ problems end-to-end (Coffee ✅ → Parking Lot → Vending/Splitwise). Resume s
 - [ ] 6.3 Connect LLD habits to Mano's real Messenger project structure
 
 ---
+
+## 🔁 Spaced-Repetition Review Queue  *(so mastered topics don't fade — re-test when due)*
+_(Master logs each mastered problem/pattern with a next-review date — escalating: +3d, +1w, +3w, +2m.)_
+
+| Topic / problem | Mastered | Last reviewed | Next review | Confidence (1–5) |
+|-----------------|----------|---------------|-------------|------------------|
+
+## 📝 Mock Scorecards  *(machine-coding / design-review rounds, over time)*
+
+| Date | Problem | Requirements | SOLID/patterns | Extensibility | Working code | Communication | Verdict |
+|------|---------|-------------|----------------|---------------|--------------|---------------|---------|
 
 ## Revisit / Weak spots
 - **Exception hygiene (recurring 3×):** reaches for borrowed JDK exceptions (AccessDenied,

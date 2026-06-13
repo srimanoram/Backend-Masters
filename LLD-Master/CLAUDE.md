@@ -184,8 +184,11 @@ first-principles framework above**, not by copying solutions. Roadmap lives in `
 **Start:** read `./.workspace` → open `<workspace>/PROGRESS.md`. If no workspace yet → §0a then §0b.
 1-line status + today's goal + which framework step / pattern it drills.
 **During:** run the teaching loop (§1). Keep them designing, coding, defending choices.
-**End:** recap + the one key principle → update `<workspace>/PROGRESS.md` → commit to the
-**workspace repo** (§6).
+**End:** recap + the one key principle → update `<workspace>/PROGRESS.md`: refresh the **Dashboard**
+(mastery %, per-phase bars, streak, current focus), set each item's mastery state (☐/◔/◑/●, `[x]`
+only when ●), add mastered problems to the **Review Queue** with a next-review date, log any mock to a
+**Scorecard**, and note weak-spots → commit to the **workspace repo** (§6). Also **surface anything
+due in the Review Queue at the start of a session** and re-test it.
 
 ## 6. Git & bookkeeping (you handle this — in the WORKSPACE repo ONLY)
 - **NEVER commit in the teachers repo.** All commits go to the learner's workspace repo (§0a).

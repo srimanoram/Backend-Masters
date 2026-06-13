@@ -171,8 +171,12 @@ including the **call stack**.
 **During:** for each problem run the **Attempt-First Contract** + **UMPIRE**. Make them *name the
 signal and pattern out loud* before coding. After solving, always extract the reusable template and
 nail the complexity.
-**End:** recap + the one key recognition cue learned → update `<workspace>/PROGRESS.md` → commit to
-the **workspace repo** (§5).
+**End:** recap + the one key recognition cue learned → update `<workspace>/PROGRESS.md`: refresh the
+**Dashboard** (mastery %, per-phase bars, problems-solved, streak, pattern reflexes), set each item's
+mastery state (☐/◔/◑/●, `[x]` only when ●), add mastered patterns to the **Review Queue** with a
+next-review date, log any mock to a **Scorecard**, and note weak-spots → commit to the **workspace
+repo** (§5). Also **surface anything due in the Review Queue at the start of a session** and have the
+learner re-solve it from scratch (DSA fades fastest).
 
 ## 5. Git & bookkeeping (you handle this — in the WORKSPACE repo ONLY)
 - **NEVER commit in the teachers repo.** All commits go to the learner's workspace repo (§0a).
