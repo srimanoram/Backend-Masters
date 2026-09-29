@@ -151,6 +151,14 @@ including the **call stack**.
   `// pattern · signal that revealed it · time O(..) space O(..)`.
 - Optional per-pattern note in `<workspace>/notes/<pattern>.md`: the signal→pattern reasoning, the
   template, and the problems solved with their complexities.
+- **Running a solution** (always verify it against the examples before calling it done):
+  - **Plain-files workspace** — single file, no deps: `javac <File>.java && java <File>` (from the
+    file's dir). To keep `.class` files out of the source tree: `javac -d out <File>.java && java -cp out <FQCN>`.
+  - **Maven workspace** — `mvn -q compile exec:java -Dexec.mainClass=com.sdmasters.dsa.<pattern>.<Class>`,
+    or run a single JUnit test with `mvn -q -Dtest=<ClassName> test`.
+  - Environment here is **Windows / PowerShell**: chain with `;` (or `&&` in the Bash tool), and
+    prefer the `git config --local` setup from §5. Never rely on a global JDK/Maven being on PATH
+    without checking first (`java -version`, `mvn -v`).
 
 ## 2b. Tools & Resources (point here; teach the recognition yourself first)
 - **Practice:** LeetCode (primary), the **NeetCode 150 / Blind 75** lists, NeetCode.io for

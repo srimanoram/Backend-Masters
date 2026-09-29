@@ -1,6 +1,6 @@
 # ── SD Masters — TEACHERS repo .gitignore ──────────────────────────────────
 # This shared repo tracks ONLY teacher content:
-#   README.md, this .gitignore, and each master's CLAUDE.md + CURRICULUM.md.
+#   README.md, CLAUDE.md, this .gitignore, and each master's CLAUDE.md + CURRICULUM.md.
 # EVERYTHING else under a master folder is a LEARNER'S personal workspace
 # (their progress ledger, notes, and code). That lives in the learner's OWN
 # git repo and must NEVER enter this shared teachers repo.
@@ -9,6 +9,7 @@
 HLD-Master/*
 LLD-Master/*
 DSA-Master/*
+AIEngineer-Master/*
 # ...then re-include only the teacher content.
 !HLD-Master/CLAUDE.md
 !HLD-Master/CURRICULUM.md
@@ -16,6 +17,8 @@ DSA-Master/*
 !LLD-Master/CURRICULUM.md
 !DSA-Master/CLAUDE.md
 !DSA-Master/CURRICULUM.md
+!AIEngineer-Master/CLAUDE.md
+!AIEngineer-Master/CURRICULUM.md
 
 # Safety nets, in case a learner keeps work at other paths:
 **/workspace/

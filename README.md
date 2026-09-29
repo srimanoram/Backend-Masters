@@ -1,19 +1,20 @@
-# SD Masters 🎓 — Design Interview Prep (HLD + LLD)
+# SD Masters 🎓 — Interview & Career Prep (DSA + LLD + HLD + AI Engineering)
 
-Two AI "masters" that coach you to mastery of the two design-interview rounds (aimed at SDE-2,
-useful at any level). This repo is the shareable **"teachers"** — clone it, drop it on a friend's
+Four AI "masters" that coach you to mastery: the three interview rounds (DSA, LLD, HLD — aimed at
+SDE-2, useful at any level) plus a from-scratch path into AI engineering. This repo is the shareable **"teachers"** — clone it, drop it on a friend's
 machine, open a session in a master's folder, and that master assesses *their* level and tailors
 the course to them.
 
-## The three masters
+## The four masters
 
 | Folder | Master | Teaches | How |
 |--------|--------|---------|-----|
 | `DSA-Master/` | 🧠 **DSA Master** | Coding / Data-Structures-&-Algorithms rounds (Java) | You solve it first; master drills **pattern recognition** + complexity + the spoken process |
 | `LLD-Master/` | 🧩 **LLD Master** | Low-Level / Machine-Coding rounds (Java) | You build it, the master reviews hard, then you extend it |
 | `HLD-Master/` | 🏛️ **HLD Master** | High-Level / System Design rounds | Framework → drill → mock interviews → scored review |
+| `AIEngineer-Master/` | 🤖 **AI Engineer Master** | AI engineering from scratch (ML → LLMs → RAG → agents → production), Python + Java bridge | Predict first, tiny experiment, then the WHY; every phase ends in a build with evals |
 
-All three follow the same **Attempt-First Contract**: they pose the problem, *you try first*, and they
+All four follow the same **Attempt-First Contract**: they pose the problem, *you try first*, and they
 only teach the method (with **why** it fits) when you're stuck, partially right, or a better approach
 exists — never leading with the answer.
 
@@ -29,7 +30,10 @@ SDMasters/                  ← TEACHERS repo (this repo): canonical, shareable,
 ├── LLD-Master/
 │   ├── CLAUDE.md
 │   └── CURRICULUM.md
-└── HLD-Master/
+├── HLD-Master/
+│   ├── CLAUDE.md
+│   └── CURRICULUM.md
+└── AIEngineer-Master/
     ├── CLAUDE.md
     └── CURRICULUM.md
 ```
@@ -47,10 +51,12 @@ off), your notes, and your code. The teachers repo's `.gitignore` excludes it, s
 cd <path>/SDMasters/DSA-Master    → open Claude Code here → "Let's begin."
 cd <path>/SDMasters/LLD-Master    → open Claude Code here → "Let's begin."
 cd <path>/SDMasters/HLD-Master    → open Claude Code here → "Let's begin."
+cd <path>/SDMasters/AIEngineer-Master → open Claude Code here → "Let's begin."
 ```
 
 > Suggested order for interview prep: **DSA → LLD → HLD** (DSA gates most first rounds; HLD matters
-> most at SDE-2+). But each master is independent — start wherever you need.
+> most at SDE-2+). **AI Engineer** is a separate career track — take it alongside or after. Each
+> master is independent — start wherever you need.
 
 **First session, the master will:**
 1. **Set up your workspace** — ask whether to *(a)* create a new git repo for your work
@@ -69,3 +75,5 @@ attribution, `--local` config) — never to the teachers repo.
 3. The master sets up *their own* workspace and assesses *them* — your repo stays untouched.
 
 > LLD is pure-Java-first; Spring comes only after fundamentals are solid (`CURRICULUM.md` Phase 6).
+> AI Engineer is Python-first (the ecosystem's language) with a Spring AI / LangChain4j bridge so what
+> you learn ships at a Java day job.
