@@ -76,6 +76,8 @@ your `PROGRESS.md` updated, and **commits your work to your workspace repo** (cl
 attribution, `--local` config) — never to the teachers repo.
 
 ## New laptop? One command
+> Full step-by-step (install, same-path rule, secrets, daily backup): **[NEW-LAPTOP.md](NEW-LAPTOP.md)**.
+
 ```powershell
 git clone https://github.com/srimanoram/Backend-Masters.git E:\SDMasters
 pwsh -File E:\SDMasters\setup.ps1                       # owner: clones private workspaces into place
