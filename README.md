@@ -75,6 +75,17 @@ Then every session it teaches the **WHY**, defines every term, makes you think/t
 your `PROGRESS.md` updated, and **commits your work to your workspace repo** (clean messages, no AI
 attribution, `--local` config) — never to the teachers repo.
 
+## New laptop? One command
+```powershell
+git clone https://github.com/srimanoram/Backend-Masters.git E:\SDMasters
+pwsh -File E:\SDMasters\setup.ps1                       # owner: clones private workspaces into place
+pwsh -File E:\SDMasters\setup.ps1 -WithClaudeState      # ...plus Claude Code memory + session transcripts
+pwsh -File E:\SDMasters\setup.ps1 -SharedOnly           # a friend: teachers only
+```
+`setup.ps1` clones each learner workspace into its master folder, writes the `.workspace` markers, and
+recreates the AI venv. Edit its `$Workspaces` table to point at your own repos. Keep the project at the
+same path (`E:\SDMasters`) if you want Claude Code sessions to resume.
+
 ## Sharing this with a friend
 1. Push this `SDMasters` folder to a git remote (GitHub/GitLab), or zip and send it.
 2. They clone it, `cd` into `HLD-Master` or `LLD-Master`, open Claude Code, say "Let's begin."
