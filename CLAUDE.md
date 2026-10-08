@@ -6,10 +6,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 `SDMasters/` is the shared **TEACHERS repo**: four AI coaching personas, one per folder
 (`DSA-Master/`, `LLD-Master/`, `HLD-Master/` for interview rounds; `AIEngineer-Master/` for an AI
-engineering career track). It contains no application code of its own.
+engineering career track), plus `Interviewer/`, an **examiner** persona that grades instead of
+teaching. It contains no application code of its own.
 Each master folder tracks exactly two files, `CLAUDE.md` (the persona and teaching method) and
-`CURRICULUM.md` (the read-only roadmap template). The root `.gitignore` ignores everything else
-under each master folder and re-includes only those two files.
+`CURRICULUM.md` (the read-only roadmap template). `Interviewer/` tracks `CLAUDE.md`, `RUBRICS.md`
+and `COMPANIES.md`. The root `.gitignore` ignores everything else under each folder and re-includes
+only those files.
 
 A session is normally opened **inside a master folder**, where that folder's `CLAUDE.md` takes over
 as the persona. This root file matters when a session is opened at the repo root, for example to edit
@@ -24,7 +26,7 @@ the course content itself.
 
 Per-master workspace resolution:
 - `<Master>/.workspace` (gitignored, one line) holds the workspace path relative to the master folder.
-  Current values: DSA, HLD and AIEngineer use `workspace`; LLD uses `./lld-master`.
+  Current values: DSA, HLD, AIEngineer and Interviewer use `workspace`; LLD uses `./lld-master`.
 - The workspace holds `PROGRESS.md` (a copy of `CURRICULUM.md` the learner ticks off), `cards.csv`
   (Anki-importable, gitignored inside the workspace), and code or notes.
 - Workspace commits use `git config --local` identity, plain messages prefixed `DSA:` / `LLD:` /
@@ -47,7 +49,8 @@ be applied to all four files in parallel:
    Decision Ladder (AIEngineer).
 5. **Flashcards** section: append `"front","back"` lines to `<workspace>/cards.csv` each session.
 6. **Session protocol**: start by reading `.workspace` and `PROGRESS.md`, surface due Review Queue
-   items; end by refreshing the Dashboard, mastery states, Review Queue, Scorecards, and committing.
+   items, and read the Interviewer's `GAPS.md` if present; end by refreshing the Dashboard, mastery
+   states, Review Queue, Scorecards, and committing.
 7. **Git and bookkeeping** and **Hard rules**.
 
 Every `CURRICULUM.md` shares the same progress-tracking scaffolding, which the session protocol
@@ -57,9 +60,23 @@ Queue** table (escalating +3d, +1w, +3w, +2m), **Mock Scorecards**, weak-spots, 
 If you rename or restructure any of these blocks in one curriculum, the matching `CLAUDE.md` session
 protocol and the other two curricula need the same change.
 
+## The Interviewer (examiner) and how it couples to the masters
+
+- `Interviewer/CLAUDE.md` runs one timed mock per session (round, company-persona, or full loop) and
+  must stay **blind**: before a mock it reads only `ledger/INDEX.md`, never scorecards, `GAPS.md`,
+  or the masters' progress files. It never teaches.
+- `RUBRICS.md` holds the 1–4 axis scale, the verdict thresholds (No Hire / Lean No / Lean Hire /
+  Strong Hire), the readiness rule (3 consecutive passes), the mock cadence, and the scorecard and
+  INDEX templates. Changing a rubric breaks comparability of the ledger history, so date any change.
+- The coupling is one file: the Interviewer rewrites `<Interviewer workspace>/GAPS.md` after every
+  mock, and each master reads `../Interviewer/workspace/GAPS.md` at session start to prioritise
+  drills. Masters never write to the Interviewer's ledger.
+- Workspace commits there are prefixed `MOCK:` and carry no AI attribution, like the masters.
+
 ## Editing conventions for teacher content
 
-- Keep the four masters symmetric: same section order, same contract wording, same bookkeeping.
+- Keep the four masters symmetric (the Interviewer is deliberately different: it grades, so it has
+  no curriculum, no Attempt-First Contract, and no teaching sections): same section order, same contract wording, same bookkeeping.
   Domain-specific content (cheat sheet, baseline task, deliverable layout) is the only place they
   should differ.
 - Scaffolding for learners is minimal by design: a `main`, inputs, and one empty method. Logic is

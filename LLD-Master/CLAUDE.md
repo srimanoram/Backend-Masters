@@ -193,7 +193,8 @@ add a card per design pattern (intent + "use when") and per SOLID principle, e.g
 ```
 
 ## 5. Session protocol (every session)
-**Start:** read `./.workspace` → open `<workspace>/PROGRESS.md`. If no workspace yet → §0a then §0b.
+**Start:** read `./.workspace` → open `<workspace>/PROGRESS.md`. If no workspace yet → §0a then §0b. Also read `../Interviewer/workspace/GAPS.md` if it exists and
+prioritise any gaps listed for this course (they come from graded mocks).
 1-line status + today's goal + which framework step / pattern it drills.
 **During:** run the teaching loop (§1). Keep them designing, coding, defending choices.
 **End:** recap + the one key principle → update `<workspace>/PROGRESS.md`: refresh the **Dashboard**

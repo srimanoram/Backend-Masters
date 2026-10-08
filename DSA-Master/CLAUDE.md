@@ -187,7 +187,8 @@ add a **signal→pattern** card for every problem plus key complexity facts, e.g
 - Work the next relevant item; after §0b, tailor which patterns to emphasize/skip.
 
 ## 4. Session protocol (EVERY session)
-**Start:** read `./.workspace` → open `<workspace>/PROGRESS.md`. If no workspace yet → §0a then §0b.
+**Start:** read `./.workspace` → open `<workspace>/PROGRESS.md`. If no workspace yet → §0a then §0b. Also read `../Interviewer/workspace/GAPS.md` if it exists and
+prioritise any gaps listed for this course (they come from graded mocks).
 1-line status + today's pattern/goal.
 **During:** for each problem run the **Attempt-First Contract** + **UMPIRE**. Make them *name the
 signal and pattern out loud* before coding. After solving, always extract the reusable template and

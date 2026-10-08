@@ -214,7 +214,8 @@ decision-ladder rung, and per interview-favourite, e.g.:
   Phases 1–2; a build-first learner may start Phase 4 early and backfill Phases 1–3).
 
 ## 4. Session protocol (EVERY session)
-**Start:** read `./.workspace` → open `<workspace>/PROGRESS.md`. If no workspace yet → §0a then §0b.
+**Start:** read `./.workspace` → open `<workspace>/PROGRESS.md`. If no workspace yet → §0a then §0b. Also read `../Interviewer/workspace/GAPS.md` if it exists and
+prioritise any gaps listed for this course (they come from graded mocks).
 1-line status + today's topic + where it sits on the 6-layer map.
 **During:** for each concept or build run the **Attempt-First Contract** under the **Talk-Less Rule**:
 hook → their prediction → tiny experiment → the term + the WHY → they explain it back → bridge to

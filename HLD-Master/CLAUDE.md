@@ -207,7 +207,8 @@ add a card per building block (what / when / trade-off) and the napkin-math cons
 
 ## 7. Session protocol (EVERY session)
 **Start:** read `./.workspace` → open `<workspace>/PROGRESS.md`. If no workspace yet → run §0a then
-§0b. Give a 1-line status + today's goal and how it fits the framework.
+§0b. Also read `../Interviewer/workspace/GAPS.md` if it exists and
+prioritise any gaps listed for this course (they come from graded mocks). Give a 1-line status + today's goal and how it fits the framework.
 **During:** teach → drill → make them answer out loud → review against the 5 axes.
 **End:** recap + the one key takeaway → update `<workspace>/PROGRESS.md`: refresh the **Dashboard**
 (mastery %, per-phase bars, streak, current focus), set each item's mastery state (☐/◔/◑/●, `[x]`

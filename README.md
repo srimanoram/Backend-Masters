@@ -5,7 +5,7 @@ SDE-2, useful at any level) plus a from-scratch path into AI engineering. This r
 machine, open a session in a master's folder, and that master assesses *their* level and tailors
 the course to them.
 
-## The four masters
+## The four masters + the Interviewer
 
 | Folder | Master | Teaches | How |
 |--------|--------|---------|-----|
@@ -13,6 +13,7 @@ the course to them.
 | `LLD-Master/` | 🧩 **LLD Master** | Low-Level / Machine-Coding rounds (Java) | You build it, the master reviews hard, then you extend it |
 | `HLD-Master/` | 🏛️ **HLD Master** | High-Level / System Design rounds | Framework → drill → mock interviews → scored review |
 | `AIEngineer-Master/` | 🤖 **AI Engineer Master** | AI engineering from scratch (ML → LLMs → RAG → agents → production), Python + Java bridge | Predict first, tiny experiment, then the WHY; every phase ends in a build with evals |
+| `Interviewer/` | 🎯 **The Interviewer** | *Examiner, not teacher.* Timed mock rounds, company-persona mocks, full loops, HM round | Blind, in-character, scored 1–4 per axis → No Hire … Strong Hire; ledger + readiness score; gap list fed back to the masters |
 
 All four follow the same **Attempt-First Contract**: they pose the problem, *you try first*, and they
 only teach the method (with **why** it fits) when you're stuck, partially right, or a better approach
@@ -33,9 +34,13 @@ SDMasters/                  ← TEACHERS repo (this repo): canonical, shareable,
 ├── HLD-Master/
 │   ├── CLAUDE.md
 │   └── CURRICULUM.md
-└── AIEngineer-Master/
-    ├── CLAUDE.md
-    └── CURRICULUM.md
+├── AIEngineer-Master/
+│   ├── CLAUDE.md
+│   └── CURRICULUM.md
+└── Interviewer/
+    ├── CLAUDE.md           ← examiner persona + blind rules + round protocol
+    ├── RUBRICS.md          ← scales, verdicts, readiness, cadence, scorecard template
+    └── COMPANIES.md        ← company/archetype interviewer profiles
 ```
 
 When you start learning, the master sets up a **workspace** — a *separate* folder with its *own*
@@ -52,6 +57,7 @@ cd <path>/SDMasters/DSA-Master    → open Claude Code here → "Let's begin."
 cd <path>/SDMasters/LLD-Master    → open Claude Code here → "Let's begin."
 cd <path>/SDMasters/HLD-Master    → open Claude Code here → "Let's begin."
 cd <path>/SDMasters/AIEngineer-Master → open Claude Code here → "Let's begin."
+cd <path>/SDMasters/Interviewer   → open Claude Code here → "Mock: <round|company|loop> ..."  (one mock per session)
 ```
 
 > Suggested order for interview prep: **DSA → LLD → HLD** (DSA gates most first rounds; HLD matters
@@ -77,3 +83,9 @@ attribution, `--local` config) — never to the teachers repo.
 > LLD is pure-Java-first; Spring comes only after fundamentals are solid (`CURRICULUM.md` Phase 6).
 > AI Engineer is Python-first (the ecosystem's language) with a Spring AI / LangChain4j bridge so what
 > you learn ships at a Java day job.
+
+## Knowing when you're done
+The masters teach; **the Interviewer grades**. Open a *fresh* session in `Interviewer/` for each mock
+(so no interview leaks into the next), get a scorecard and a verdict, and let the ledger's **readiness
+score** (3 consecutive passes) tell you when a course moves to maintenance mode. The Interviewer writes
+a gap list that every master reads at its next session start, so a failed mock becomes the next lesson.
